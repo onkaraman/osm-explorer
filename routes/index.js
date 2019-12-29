@@ -1,5 +1,7 @@
-let express = require("express");
+let express = require('express');
 let router = express.Router();
+let osm_controller = require("../controllers/osm");
 
-let explorer_controller = require("../controllers/explorer");
+router.post('/', osm_controller.get_nodes);
 
+module.exports = router;
