@@ -5,7 +5,7 @@ It mainly serves as a middleware for automated requests for OSM.
 ---------------------------------------------
 
 
-####/nodes
+#### /nodes
 Will return a list of OSM nodes for further API use. 
 
 <b>Example</b><br/>
@@ -39,7 +39,7 @@ To narrow down the results, the node type can be defined in the same query:
 <pre>{ "query": "Frankfurt am Main", "type": "City" }</pre>
 <br/>
 
-####/distance
+#### /distance
 Will return the distance between two geo locations.
 
 <b>Example</b><br/>
@@ -68,7 +68,7 @@ Will return a response like:
 
 <br/>
 
-####/radius
+#### /radius
 Will return all nodes around a given geo location.
 
 <b>Example</b><br/>
