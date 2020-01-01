@@ -5,6 +5,8 @@ let overpass_controller = require("../controllers/overpass");
 
 router.post("/nodes", osm_controller.get_nodes);
 
-router.post("/around", overpass_controller.get_radius);
+router.post("/distance", osm_controller.routing);
+
+router.post("/radius", overpass_controller.get_radius);
 
 module.exports = router;
